@@ -13,3 +13,7 @@ npm install -g @vue/cli
 
 ### [Web可视化设计](https://github.com/White-Soul/Visual/releases/tag/WebVisual)
 
+### 运行本项目
+```
+npm run serve
+```

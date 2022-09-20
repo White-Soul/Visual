@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <div style="width: 600px; height: 400px" ref="chart" ></div>
-  </div>
+    <div class="bar" ref="chart" ></div>
 </template>
 
 <script>
@@ -63,7 +61,11 @@ export default {
 </script>
 
 <style>
-
+    .bar{
+        width: 600px;
+        height: 400px;
+        float: left;
+    }
 </style>
 /*
 type: 'bar'：柱状/条形图
