@@ -5,6 +5,7 @@
     <!-- <Dynamic /> -->
     <Discount />
     <Map />
+    <Dataset />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Pie from './components/pie.vue';
 import Dynamic from './components/dynamic.vue';
 import Discount from './components/Discount.vue';
 import Map from './components/map.vue';
+import Dataset from './components/dataset.vue';
 
 export default {
   name: 'App',
@@ -22,7 +24,8 @@ export default {
     Pie,
     Dynamic,
     Discount,
-    Map
+    Map,
+    Dataset
   }
 }
 </script>
