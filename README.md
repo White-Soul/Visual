@@ -19,4 +19,4 @@ npm install -g @vue/cli
 npm install -g serve
 # 启动服务器
 serve -s [文件夹名]
-```
+```shell
