@@ -1,12 +1,13 @@
 <template>
   <div class="apps">
-    <Bar />
-    <Pie />
+    <bar />
+    <pie />
     <!-- <Dynamic /> -->
-    <Discount />
-    <Map />
-    <Dataset />
+    <discount />
+    <map />
+    <dataset />
     <visual-map />
+    <data-zoom />
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import Discount from "./components/Discount.vue";
 import Map from "./components/map.vue";
 import Dataset from "./components/dataset.vue";
 import VisualMap from "./components/visualMap.vue";
+import DataZoom from "./components/dataZoom.vue";
 
 export default {
   name: "App",
@@ -29,6 +31,7 @@ export default {
     Map,
     Dataset,
     VisualMap,
+    DataZoom,
   },
 };
 </script>
