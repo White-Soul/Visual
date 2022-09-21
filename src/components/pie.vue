@@ -10,16 +10,26 @@ export default {
   data() {
     return {
       chart: null,
+      option: {},
+      data: [
+        // 数据数组，name 为数据项名称，value 为数据项值
+        { value: 235, name: "视频广告" },
+        { value: 274, name: "联盟广告" },
+        { value: 310, name: "邮件营销" },
+        { value: 335, name: "直接访问" },
+        { value: 400, name: "搜索引擎" },
+      ],
     };
   },
   methods: {
     init() {
+      console.log("this :>> ", this);
       // 'dark' 主题颜色
       this.chart = markRaw(echarts.init(this.$refs.pie, "dark"));
       // 开启 loading 效果
       this.chart.showLoading();
       // 可以通过设置参数 roseType: 'angle' 把饼图显示成南丁格尔图。
-      let option = {
+      this.option = {
         title: { text: "访问来源" },
         series: [
           {
@@ -27,14 +37,7 @@ export default {
             type: "pie", // 设置图表类型为饼图
             radius: "55%", // 饼图的半径，外半径为可视区尺寸（容器高宽中较小一项）的 55% 长度。
             roseType: "angle",
-            data: [
-              // 数据数组，name 为数据项名称，value 为数据项值
-              { value: 235, name: "视频广告" },
-              { value: 274, name: "联盟广告" },
-              { value: 310, name: "邮件营销" },
-              { value: 335, name: "直接访问" },
-              { value: 400, name: "搜索引擎" },
-            ],
+            data: this.data,
             // itemStyle 参数可以设置诸如阴影、透明度、颜色、边框颜色、边框宽度等：
             // itemStyle: {
             //     normal: {
@@ -57,20 +60,23 @@ export default {
           },
         },
       };
-      this.chart.setOption(option);
+      this.chart.setOption(this.option);
       // 隐藏 loading 效果
       this.chart.hideLoading();
     },
   },
   mounted() {
     this.init();
+    this.chart.on("click", function (params) {
+      alert(params.name);
+    });
   },
 };
 </script>
 
 <style>
 .pie {
-  width: 400px;
+  width: 500px;
   height: 400px;
   float: left;
 }
