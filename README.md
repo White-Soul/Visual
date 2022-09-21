@@ -11,7 +11,7 @@ npm install -g @vue/cli
 ```
 # 下载
 
-### [Web可视化设计src](https://github.com/White-Soul/Visual/releases/tag/WebVisual)
+### [Web可视化设计](https://github.com/White-Soul/Visual/releases/tag/WebVisual)
 
 ### 运行本项目
 ```
