@@ -15,6 +15,8 @@ npm install -g @vue/cli
 
 ### 运行本项目
 ```
+# 安装serve本地服务器
 npm install -g serve
+# 启动服务器
 serve -s [文件夹名]
 ```
