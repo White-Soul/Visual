@@ -1,10 +1,10 @@
 <template>
   <div class="apps">
     <bar />
+    <dynamic />
     <pie />
-    <!-- <Dynamic /> -->
     <discount />
-    <map />
+    <Map />
     <dataset />
     <visual-map />
     <data-zoom />
