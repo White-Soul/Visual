@@ -9,7 +9,7 @@
 ```
 npm install -g @vue/cli
 ```
-# Download
+# 下载
 
 ### [Web可视化设计](https://github.com/White-Soul/Visual/releases/tag/WebVisual)
 
